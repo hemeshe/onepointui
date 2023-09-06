@@ -1,0 +1,17 @@
+#Stratos App Deployment
+apiVersion: shell.ts.deploy/v1alpha1
+kind: appDeployment
+metadata:
+  projectStream: mnrv
+  workStream: def
+  region: europe
+  owner: Stratos
+  placement: pub
+  name: minerva-portal-ui
+spec:
+  appservice:
+    - nameSuffix: minerva-portal-ui
+      #ingressHostName: minerva.dev.stratos.shell
+      osType: windows
+      siteConfigRequired: true
+      windowsFxVersion: DOTNETCORE|3.1

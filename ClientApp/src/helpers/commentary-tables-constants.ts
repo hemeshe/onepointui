@@ -1,0 +1,9 @@
+export const CapitalEmployed = 'Capital Employed';
+export const PerformanceDashboard = 'Performance Dashboard';
+export const Pd_Combined_Gp_Tab = 'Combined G&P Summary';
+export const Pd_Region_Tab = 'Region Summary';
+export const Pd_Cashflow_Tab = 'Cash Flow Walk';
+export const Pd_Gross_Margin_Tab = 'Gross Margin Breakdown';
+export const FinanceReport = 'FR Pack';
+export const Fr_Odc_Tab = 'ODC&OtherRevenues';
+export const Fr_Erp_R1_Tab = 'ERP R1 Validation';

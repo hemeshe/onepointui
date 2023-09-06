@@ -1,0 +1,134 @@
+trigger:
+- 'Dev'
+
+variables:
+  AppName: MINERVA-portal-ui
+  AppProjectName: Minerva-UI
+  Solution: '**/*.sln'
+  Projects: '**/App.csproj'
+  Configuration: Release
+  ArtifactsDir: $(Pipeline.Workspace)/$(AppName)
+  ProjectStream: mnrv
+  WorkStream: def
+  Placement: pub
+  IsMasterBranch: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
+
+pool:
+  vmImage: 'windows-latest'
+
+stages:
+  - stage: Build
+    jobs:
+      - job: BuildAndTest
+        variables:
+          - group: minerva-sbx
+          - name: StagingDir
+            value: $(Build.ArtifactStagingDirectory)/$(AppName)
+        steps:
+        - bash: | 
+            echo 'StagingDir $(StagingDir)'
+            echo 'Token $(MINERVA_SBX_TOKEN)'
+        # - task: NuGetCommand@2
+        #   displayName: 'Restore Nuget Packages'
+        #   inputs:
+        #     command: 'restore'
+        #     restoreSolution: $(Solution)
+        #     # projects: $(Projects)
+        #     # feedsToUse: 'config'
+        #     # nugetConfigPath: 'src/nuget.config'
+        #     arguments: '--configuration $(Configuration)'
+
+        - task: NodeTool@0
+          displayName: "Install Node.js"
+          inputs:
+            versionSpec: "12.10.0"
+        - task: YarnInstaller@3
+          inputs:
+            versionSpec: "1.x"
+            checkLatest: true
+        - task: Yarn@3
+          displayName: "Yarn Install"
+          inputs:
+            projectDirectory: "$(Parameters.projectDirectory)"
+            arguments: "--network-concurrency 1"
+            continueOnError: true
+        - task: UseDotNet@2
+          inputs:
+            packageType: 'sdk'
+            version: '3.1.201'
+            includePreviewVersions: true
+
+        # - task: DotNetCoreCLI@2
+        #   displayName: 'Build Solution'
+        #   inputs:
+        #     command: 'build'
+        #     projects: $(Solution)
+        #     # projects: $(Solution) -- need to check which will be correct
+        #     arguments: '--no-restore --configuration $(Configuration)'
+        - task: DotNetCoreCLI@2
+          displayName: Publish Binaries To Artifact Staging Dir
+          inputs:
+            command: 'publish'
+            publishWebProjects: false
+            projects: $(Projects)
+            # projects: $(Solution) -- need to check which will be correct
+            zipAfterPublish:  true
+            arguments: '--output "$(StagingDir)" --configuration $(Configuration)'
+
+        - bash: |
+            echo 'FilePath $(StagingDir)/s.zip'
+            echo 'MovePath $(StagingDir)/$(AppName).$(Build.BuildNumber).zip'
+        - bash: mv "$(StagingDir)/s.zip" "$(StagingDir)/$(AppName).$(Build.BuildNumber).zip"
+          displayName: 'Add Build Number To Zip File Name'
+
+        - bash: cp stratos-deploy.yml "$(StagingDir)"
+          displayName: Copy stratos-deploy.yml To Artifact Staging Dir
+
+        - task: PublishPipelineArtifact@1
+          displayName: Publish Pipeline Artifacts
+          inputs:
+            targetPath: '$(StagingDir)'
+            artifactName: $(AppName)
+
+        # - task: sedp-deploy@0
+        #   inputs:
+        #     manifestpath: 'stratos-deploy.yml'
+        #     environment: 'sbx'
+        #     token: $(MINERVA_SBX_TOKEN)
+  
+  - stage: Deploy_To_SandBox
+    dependsOn: Build
+    variables:
+     - group: minerva-sbx
+     - name: Environment
+       value: sbx
+     - name: Region
+       value: euw
+     - name: suffix
+       value: minerva-portal-ui
+    
+    jobs:
+      - deployment: Sandbox
+        environment: ${{variables.Environment}}
+        strategy:
+         runOnce:
+           deploy:
+             steps:
+               - task: sedp-deploy@0
+                 displayName: Deploy App Service
+                 inputs:
+                   manifestpath: '$(ArtifactsDir)/stratos-deploy.yml'
+                   environment: $(Environment)
+                   token: $(MINERVA_SBX_TOKEN)
+               - bash: |
+                   echo 'azureSubscription $(ProjectStream)-$(WorkStream)-$(Placement)-${{variables.Environment}}'
+                   echo 'appName $(ProjectStream)-$(WorkStream)-$(Placement)-$(Environment)-$(Region)-100-appw-$(suffix)'
+               - task: AzureWebApp@1
+                 displayName: Publish To Azure App Service
+                 inputs:
+                   azureSubscription: '$(ProjectStream)-$(WorkStream)-$(Placement)-${{variables.Environment}}'
+                   appType: webApp
+                   appName: $(ProjectStream)-$(WorkStream)-$(Placement)-$(Environment)-$(Region)-100-appw-$(suffix)
+                   package: '$(ArtifactsDir)/**/*.zip'
+                   appSettings: "-STRATOS_KEY_VAULT $(MINERVA_KEY_VAULT) -AZURE_CLIENT_ID $(MINERVA_IDENTITY_CLIENT_ID)"
+                   deploymentMethod: runFromPackage

@@ -1,0 +1,1216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DataIngestion /> should render correctly 1`] = `
+.c19 {
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 5px;
+  position: relative;
+  padding: 6px 0;
+}
+
+.c22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c1 {
+  height: 55px;
+  width: 100%;
+  position: fixed;
+  background-color: #FFFFFF;
+  top: 0;
+  left: 0;
+  color: #595959;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 55px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20%;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Futura Medium;
+  color: #003c88;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 20px;
+  font-size: 1.25rem;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+  font-weight: normal;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c9 {
+  padding: 0 4px;
+}
+
+.c6 {
+  font-weight: 900;
+  word-spacing: 0.1rem;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  background: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c12 {
+  height: 100%;
+  border-bottom: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 14px 20px;
+  font-weight: normal;
+}
+
+.c13 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #003c88;
+  font-size: 1rem;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c15 {
+  display: inline-block;
+  position: relative;
+}
+
+.c16 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin: 4px 8px;
+  color: #003c88;
+  position: relative;
+}
+
+.c4 {
+  height: 40px;
+  width: 40px;
+  fill: currentColor;
+}
+
+.c17 {
+  height: 18px;
+  width: 18px;
+  fill: currentColor;
+}
+
+.c18 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.c29 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c29 > * {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+}
+
+.c36 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c36 > * {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+}
+
+.c30 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c41 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #ffffff;
+  padding: 0 15px 0px 5px;
+}
+
+.c27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  background: #f5f5f5;
+}
+
+.c23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.c26 {
+  height: 100%;
+  border-bottom: none;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0px 30px 0 0;
+  line-height: 1.25rem;
+  padding: 5px;
+}
+
+.c24 {
+  height: 100%;
+  border-bottom: 3px solid #009EB4;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0px 30px 0 0;
+  line-height: 1.25rem;
+  padding: 5px;
+}
+
+.c25 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #595959;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.c28 {
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.c31 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+
+.c32 {
+  color: #7f7f7f;
+  font-size: 1rem;
+  display: block;
+  padding: 1px 1px 5px 1px;
+  box-sizing: border-box;
+}
+
+.c40 {
+  color: #404040;
+  font-size: 1rem;
+  words-spacing: 1px;
+  padding-right: 3px;
+}
+
+.c34 {
+  position: relative;
+  width: 95%;
+  height: 400px;
+  background: white;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.c35 {
+  width: 100%;
+  height: 90%;
+  background: #f5f5f5;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+.c37 {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  top: 0;
+  left: 28px;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.c38 {
+  color: #404040;
+  font-family: Futura Medium;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.25rem;
+  display: block;
+  margin-top: 20px;
+  padding: 2px 1px 10px 10px;
+  text-align: left;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: absolute;
+  left: 280px;
+}
+
+.c39 {
+  padding: 150px 10px 10px 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width:1280px) {
+  .c4 {
+    max-height: 56px;
+  }
+}
+
+@media (max-width:1280px) {
+  .c17 {
+    max-height: 56px;
+  }
+}
+
+@media (min-width:576px) {
+  .c30 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c30 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width:992px) {
+  .c30 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width:1200px) {
+  .c30 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width:1400px) {
+  .c30 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width:576px) {
+  .c33 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width:768px) {
+  .c33 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width:992px) {
+  .c33 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width:1200px) {
+  .c33 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width:1400px) {
+  .c33 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width:576px) {
+  .c41 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c41 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+
+@media (min-width:992px) {
+  .c41 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+
+@media (min-width:1200px) {
+  .c41 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+
+@media (min-width:1400px) {
+  .c41 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+
+<div>
+  <section
+    class="c0"
+  >
+    <header
+      class="c1"
+    >
+      <section
+        class="c0"
+      >
+         
+        <section
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            <div
+              class=""
+            >
+              <svg
+                class="c4"
+                size="44"
+              >
+                logo.svg
+              </svg>
+            </div>
+            <div
+              class="c5"
+            >
+              <div
+                class="c6"
+                data-testid="title"
+              >
+                T&S MI PORTAL
+              </div>
+              <div
+                class="c7"
+              >
+                <div
+                  class="c8"
+                >
+                  By : 
+                </div>
+                <div
+                  class="c9"
+                >
+                   T&S FINANCE
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c10"
+          >
+            <div
+              class="c11"
+            >
+              <span
+                class="c12"
+              >
+                <a
+                  class="c13"
+                  href="/home"
+                >
+                  Home
+                </a>
+              </span>
+              <span
+                class="c12"
+              >
+                <a
+                  class="c13"
+                  href="/commentary"
+                >
+                  Commentary
+                </a>
+              </span>
+              <span
+                class="c12"
+              >
+                <a
+                  class="c13"
+                  href="/mapping"
+                >
+                  Mapping
+                </a>
+              </span>
+              <span
+                class="c12"
+              >
+                <a
+                  class="c13"
+                  href="/data-ingestion"
+                >
+                  Data Ingestion
+                </a>
+              </span>
+            </div>
+          </div>
+          <div
+            class="c14"
+          >
+            <div
+              class="c15"
+            >
+              <a
+                class="c16"
+                href="/"
+              >
+                <svg
+                  class="c17"
+                  size="18"
+                >
+                  info.svg
+                </svg>
+              </a>
+              <div
+                class="c18"
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+    </header>
+    <div
+      class="c19"
+    >
+      <div
+        class="c20"
+      >
+        <div
+          class="c21"
+        >
+          <div
+            class="c22"
+          >
+            <div
+              class="c23"
+              style="margin-left: 20px; margin-right: 20px;"
+            >
+              <span
+                class="c24"
+              >
+                <a
+                  class="c25"
+                >
+                  Introduction
+                </a>
+              </span>
+              <span
+                class="c26"
+              >
+                <a
+                  class="c25"
+                >
+                  Users
+                </a>
+              </span>
+              <span
+                class="c26"
+              >
+                <a
+                  class="c25"
+                >
+                  Profiles
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c27"
+      >
+        <header
+          class="c1"
+        >
+          <section
+            class="c0"
+          >
+             
+            <section
+              class="c2"
+            >
+              <div
+                class="c3"
+              >
+                <div
+                  class=""
+                >
+                  <svg
+                    class="c4"
+                    size="44"
+                  >
+                    logo.svg
+                  </svg>
+                </div>
+                <div
+                  class="c5"
+                >
+                  <div
+                    class="c6"
+                    data-testid="title"
+                  >
+                    T&S MI PORTAL
+                  </div>
+                  <div
+                    class="c7"
+                  >
+                    <div
+                      class="c8"
+                    >
+                      By : 
+                    </div>
+                    <div
+                      class="c9"
+                    >
+                       T&S FINANCE
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c10"
+              >
+                <div
+                  class="c11"
+                >
+                  <span
+                    class="c12"
+                  >
+                    <a
+                      class="c13"
+                      href="/home"
+                    >
+                      Home
+                    </a>
+                  </span>
+                  <span
+                    class="c12"
+                  >
+                    <a
+                      class="c13"
+                      href="/commentary"
+                    >
+                      Commentary
+                    </a>
+                  </span>
+                  <span
+                    class="c12"
+                  >
+                    <a
+                      class="c13"
+                      href="/mapping"
+                    >
+                      Mapping
+                    </a>
+                  </span>
+                  <span
+                    class="c12"
+                  >
+                    <a
+                      class="c13"
+                      href="/data-ingestion"
+                    >
+                      Data Ingestion
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="c14"
+              >
+                <div
+                  class="c15"
+                >
+                  <a
+                    class="c16"
+                    href="/"
+                  >
+                    <svg
+                      class="c17"
+                      size="18"
+                    >
+                      info.svg
+                    </svg>
+                  </a>
+                  <div
+                    class="c18"
+                  />
+                </div>
+              </div>
+            </section>
+          </section>
+        </header>
+        <div
+          class="c28"
+        >
+          <section
+            class="c29"
+          >
+            <section
+              class="c30"
+              size="12"
+            >
+              <div
+                class="c31"
+              >
+                <span
+                  class="c32"
+                >
+                  The Power BI DRLS page has been developed to control and manage the user access of various pages and reports used for Trading & Supply Management Information.
+                </span>
+              </div>
+            </section>
+          </section>
+          <section
+            class="c29"
+            style="margin-top: 20px;"
+          >
+            <section
+              class="c33"
+              size="6"
+            >
+              <div
+                class="c34"
+              >
+                <div
+                  class="c35"
+                >
+                  <section
+                    class="c36"
+                  >
+                    <section
+                      class="c30"
+                      size="12"
+                    >
+                      <img
+                        alt=""
+                        class="c37"
+                        src="/admin-images/profiles.png"
+                      />
+                      <a
+                        class="c38"
+                        href="/power-bi-drls/users"
+                      >
+                        Users:
+                      </a>
+                    </section>
+                  </section>
+                  <section
+                    class="c29"
+                  >
+                    <section
+                      class="c30"
+                      size="12"
+                    >
+                      <div
+                        class="c39"
+                      >
+                        <span
+                          class="c32"
+                        >
+                          <span
+                            class="c40"
+                          >
+                            View:
+                          </span>
+                          Display Power BI access and current status of users.
+                        </span>
+                        <span
+                          class="c32"
+                        >
+                          <span
+                            class="c40"
+                          >
+                            Add:
+                          </span>
+                          Create new users with a specific access level.
+                        </span>
+                        <span
+                          class="c32"
+                        >
+                          <span
+                            class="c40"
+                          >
+                            Edit:
+                          </span>
+                          Modify existing user access and/or status of access.
+                        </span>
+                        <span
+                          class="c32"
+                        >
+                          <span
+                            class="c40"
+                          >
+                            History:
+                          </span>
+                          Display trail of previous access and status changes.
+                        </span>
+                      </div>
+                    </section>
+                  </section>
+                </div>
+              </div>
+            </section>
+            <section
+              class="c33"
+              size="6"
+            >
+              <div
+                class="c34"
+              >
+                <div
+                  class="c35"
+                >
+                  <section
+                    class="c36"
+                  >
+                    <section
+                      class="c41"
+                    >
+                      <img
+                        alt=""
+                        class="c37"
+                        src="/admin-images/users.png"
+                      />
+                      <a
+                        class="c38"
+                        href="/power-bi-drls/profiles"
+                      >
+                        Profiles:
+                      </a>
+                    </section>
+                  </section>
+                  <section
+                    class="c29"
+                  >
+                    <section
+                      class="c30"
+                      size="12"
+                    >
+                      <div
+                        class="c39"
+                      >
+                        <span
+                          class="c32"
+                        >
+                          <span
+                            class="c40"
+                          >
+                            View:
+                          </span>
+                          Display Power BI access for current users.
+                        </span>
+                        <span
+                          class="c32"
+                        >
+                          <span
+                            class="c40"
+                          >
+                            Add:
+                          </span>
+                          Create new users by specific Power BI page.
+                        </span>
+                        <span
+                          class="c32"
+                        >
+                          <span
+                            class="c40"
+                          >
+                            Edit:
+                          </span>
+                          Modify existing user access and/or status of access.
+                        </span>
+                        <span
+                          class="c32"
+                        >
+                          <span
+                            class="c40"
+                          >
+                            History:
+                          </span>
+                          Display trail of previous access and status changes.
+                        </span>
+                      </div>
+                    </section>
+                  </section>
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

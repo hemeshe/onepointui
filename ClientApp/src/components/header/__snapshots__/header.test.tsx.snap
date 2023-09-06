@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render correctly 1`] = `
+.c0 {
+  height: 55px;
+  width: 100%;
+  position: relative;
+  background-color: #FFFFFF;
+  top: 0;
+  left: 0;
+  color: #595959;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+<div>
+  <header
+    class="c0"
+  />
+</div>
+`;

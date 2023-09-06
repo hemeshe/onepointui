@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Container /> should render correctly 1`] = `
+.c0 {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:576px) {
+  .c0 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width:1400px) {
+  .c0 {
+    max-width: 1320px;
+  }
+}
+
+<div>
+  <section
+    class="c0"
+  />
+</div>
+`;

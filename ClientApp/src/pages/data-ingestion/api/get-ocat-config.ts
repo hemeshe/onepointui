@@ -1,0 +1,14 @@
+import { Api } from "../../../helpers/api";
+import { Fetch } from "../../../helpers/fetch";
+
+export const GetOcatData = async () => {
+  try {
+    let response = await Fetch(`${Api}/DataIngestion/Config/Ocat`, "GET");
+    if (!response.ok) {
+      throw Error(response.statusText);
+    }
+    return await response.json();
+  } catch (error: any) {
+    console.log(error.message);
+  }
+};

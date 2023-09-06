@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon should render with the default height & width 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  fill: currentColor;
+}
+
+@media (max-width:1280px) {
+  .c0 {
+    max-height: 56px;
+  }
+}
+
+<div>
+  <svg
+    class="c0"
+  >
+    logo.svg
+  </svg>
+</div>
+`;
+
+exports[`Icon should render with the given size 1`] = `
+.c0 {
+  height: 24px;
+  width: 24px;
+  fill: currentColor;
+}
+
+@media (max-width:1280px) {
+  .c0 {
+    max-height: 56px;
+  }
+}
+
+<div>
+  <svg
+    class="c0"
+    size="24"
+  >
+    logo.svg
+  </svg>
+</div>
+`;
+
+exports[`Icon should render with the given width and height 1`] = `
+.c0 {
+  height: 24px;
+  width: 24px;
+  fill: currentColor;
+}
+
+@media (max-width:1280px) {
+  .c0 {
+    max-height: 56px;
+  }
+}
+
+<div>
+  <svg
+    class="c0"
+    height="24"
+    width="24"
+  >
+    logo.svg
+  </svg>
+</div>
+`;
